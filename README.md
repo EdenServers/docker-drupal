@@ -1,11 +1,11 @@
-# Official Joomla Container on EdenServers
+# Official Drupal Container on EdenServers
 
 [![Run on EdenServers](https://img.shields.io/badge/EdenServers-view-blue.svg)](http://www.edenservers.us)
-[![](https://badge.imagelayers.io/edenservers/joomla:latest.svg)](https://imagelayers.io/?images=edenservers/joomla:latest 'Get your own badge on imagelayers.io')
+[![](https://badge.imagelayers.io/edenservers/drupal:latest.svg)](https://imagelayers.io/?images=edenservers/drupal:latest 'Get your own badge on imagelayers.io')
 
-![](https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/Joomla!-Logo.svg/2000px-Joomla!-Logo.svg.png)
+![](http://image.noelshack.com/fichiers/2015/35/1440780035-logo-drupal-name-3.jpg)
 
-All-in-one Joomla Server Container built for [EdenServers](http://www.edenservers.us).
+All-in-one Drupal Server Container built for [EdenServers](http://www.edenservers.us).
 
 It also includes an SCP server.
 
@@ -20,7 +20,7 @@ Our images are built to specifically run for our services. You can run it direct
 
 This initial version contains:
 
-* *Joomla*
+* *Drupal*
 * *scp* Server to upload and download files
 * *mysql*
 
@@ -28,7 +28,7 @@ This initial version contains:
 
 ## Install
 
-    $ docker pull edenservers/joomla
+    $ docker pull edenservers/drupal
 
 ---
 
@@ -41,20 +41,20 @@ This initial version contains:
 
 | Port  | Description |
 | ------------- | ------------- |
-| 80 | Joomla  |
+| 80 | Drupal  |
 | 22 | SCP  |
 
 ---
 
 ## Run example
 
-    $  docker run -p 80:80 -p 1234:22 -e USERNAME=edenservers -e PASSWORD=edenservers --name joomla -d edenservers/joomla
+    $  docker run -p 80:80 -p 1234:22 -e USERNAME=edenservers -e PASSWORD=edenservers --name drupal -d edenservers/drupal
 
 On setup page :
-* **database type** : mysql with mysqli extension
-* **database name** : joomla
-* **username** : joomla
-* **password** : joomla
+* **database type** : mysql
+* **database name** : drupal
+* **username** : drupal
+* **password** : drupal
 * **host** : localhost
 
 ---
